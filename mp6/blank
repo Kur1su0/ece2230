@@ -1,0 +1,34 @@
+#define Retrive(key)  \
+               ip = table_retrieve(ht,key);   \
+               if (ip==NULL)   \
+                   printf("not found\n")\; \
+               else    \
+                   printf("found key\n");  \
+
+
+#define Delete(key)  \
+              ip=table_delete(ht,key);   \
+               if (ip==NULL)   \
+                   printf("not found\n"); \
+               else  {  \
+                    printf("data deleted\n");\
+               }  \
+
+
+#define Insert(key,value)  \
+              ip=(int*)malloc(sizeof(int)); \
+              *ip=value;\
+              switch (table_insert(ht,key,ip)) {\
+                  case -1:\
+                     printf("insertion fail\n");\
+		      if(ip!=NULL);\
+		      free(ip);\
+		      ip=NULL;\
+                     break;\
+                  case 0:\
+                     printf("inserted\n");\
+                     break;\
+                  case 1:\
+                     printf("update with new data\n ");\
+		      break;\
+              }   \

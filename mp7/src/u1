@@ -1,0 +1,31 @@
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 1543343734
+
+-------- Unit Driver 1 --------
+Bondary check1
+Deleting 11...failed
+Table info:
+
+i   Key 
+--------
+0   empt
+1   empt
+Inserting 11 ...updated
+
+insert a dup key
+Inserting 11 ...succeed
+
+del a non-exist key
+Deleting 12...failed
+
+Insert to a full table
+Inserting 15 ...failed
+Table info:
+
+i   Key 
+--------
+0   empt
+1   11  
+
+-------- End of Unit Driver 1 --------

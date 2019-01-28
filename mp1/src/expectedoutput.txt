@@ -1,0 +1,117 @@
+Welcome to lab1. Possible commands:
+CREATE x
+ADDSU
+LISTCH x
+DELSU x
+CLEARCH x
+CHANGECH old new
+STATS
+PRINT
+QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP1, Fall 2018
+# testintput.txt
+# 
+# A test script to show a few simple tests for the sequential list ADT.
+# This is an example of a start to a test plan.  These tests are very incomplete.
+# 
+# Assumptions: these tests are designed with a list size of 3.  
+# 
+# TEST 1:  Add three entries to list.  
+# 
+New list with size: 3
+secondary user ID number:IP address:Access point IP address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Band (2.4|3.5|5.0):Channel:Data rate:Time received (int):
+Inserted: 111
+secondary user ID number:IP address:Access point IP address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Band (2.4|3.5|5.0):Channel:Data rate:Time received (int):
+Inserted: 551
+secondary user ID number:IP address:Access point IP address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Band (2.4|3.5|5.0):Channel:Data rate:Time received (int):
+Inserted: 100
+# 
+# To determine if test 1 passes look for three "Inserted" messages
+# 
+# TEST 2: Print the list and verify three entries are sorted 
+# 
+List has 3 records
+1: ID: 100, MIP: 111, AID: 200, Auth: T, Pri: standard, B: 5, C: 2, R: 11.1 Time: 3
+2: ID: 111, MIP: 100, AID: 200, Auth: T, Pri: standard, B: 2.4, C: 2, R: 54.2 Time: 1
+3: ID: 551, MIP: 500, AID: 200, Auth: F, Pri: strong, B: 2.4, C: 1, R: 1.3 Time: 2
+Number records: 3, Array size: 3
+# 
+# To deterine if test 2 passes list should be printed in order with 3 records.
+# Also, stats should show 3 records with an array size of 3
+# 
+# TEST 3:  Update the 111 entry in the list
+# 
+secondary user ID number:IP address:Access point IP address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Band (2.4|3.5|5.0):Channel:Data rate:Time received (int):
+Updated: 111
+# 
+# To determine if test 3 passes look for "Updated" message
+# 
+# TEST 4: Print the list, verify entry for 111 replaced
+# 
+List has 3 records
+1: ID: 100, MIP: 111, AID: 200, Auth: T, Pri: standard, B: 5, C: 2, R: 11.1 Time: 3
+2: ID: 111, MIP: 101, AID: 201, Auth: F, Pri: NSA, B: 2.4, C: 2, R: 54.4 Time: 4
+3: ID: 551, MIP: 500, AID: 200, Auth: F, Pri: strong, B: 2.4, C: 1, R: 1.3 Time: 2
+Number records: 3, Array size: 3
+# 
+# To determine if test 4 passes look for 3 records, and 111 record should be 
+# updated with Time as 4.  Stats should still be 3 records, size 3
+# 
+# TEST 5: look for a record in the list and one not in list
+# 
+List has 3 records.  Looking for ch 1
+ID: 551, MIP: 500, AID: 200, Auth: F, Pri: strong, B: 2.4, C: 1, R: 1.3 Time: 2
+List has 3 records.  Looking for ch 2
+ID: 100, MIP: 111, AID: 200, Auth: T, Pri: standard, B: 5, C: 2, R: 11.1 Time: 3
+ID: 111, MIP: 101, AID: 201, Auth: F, Pri: NSA, B: 2.4, C: 2, R: 54.4 Time: 4
+List has 3 records.  Looking for ch 3
+# 
+# To determine if test 5 passes it should print one record on channel 1 and
+# two records on channel 2.  No records on channel 3
+# 
+# TEST 6:  Attempt to add fourth record. If list size is 3 then add will be rejected 
+# 
+secondary user ID number:IP address:Access point IP address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Band (2.4|3.5|5.0):Channel:Data rate:Time received (int):
+Rejected: 222
+List has 3 records
+1: ID: 100, MIP: 111, AID: 200, Auth: T, Pri: standard, B: 5, C: 2, R: 11.1 Time: 3
+2: ID: 111, MIP: 101, AID: 201, Auth: F, Pri: NSA, B: 2.4, C: 2, R: 54.4 Time: 4
+3: ID: 551, MIP: 500, AID: 200, Auth: F, Pri: strong, B: 2.4, C: 1, R: 1.3 Time: 2
+Number records: 3, Array size: 3
+# 
+# To check test 6, look for Rejected if list size is three.  Print shows 3 old
+# records Stats shows 3 records, array size 3.  If the program is run with a list
+# size of 4 or larger then the add should be successful.
+# 
+# TEST 7: Remove the last element in the list and try to remove an element 
+# not in the list
+# 
+Removed: 551
+ID: 551, MIP: 500, AID: 200, Auth: F, Pri: strong, B: 2.4, C: 1, R: 1.3 Time: 2
+Did not remove: 552
+List has 2 records
+1: ID: 100, MIP: 111, AID: 200, Auth: T, Pri: standard, B: 5, C: 2, R: 11.1 Time: 3
+2: ID: 111, MIP: 101, AID: 201, Auth: F, Pri: NSA, B: 2.4, C: 2, R: 54.4 Time: 4
+# 
+# To verify test 7, should see removed 551, did not remove 552, and final list
+# should be printed with 2 records.
+# 
+# TEST 8: Quit
+# 
+Moved 2 users from channel 2 to 3
+List has 2 records.  Looking for ch 2
+List has 2 records.  Looking for ch 3
+ID: 100, MIP: 111, AID: 200, Auth: T, Pri: standard, B: 5, C: 3, R: 11.1 Time: 3
+ID: 111, MIP: 101, AID: 201, Auth: F, Pri: NSA, B: 2.4, C: 3, R: 54.4 Time: 4
+List has 2 records
+1: ID: 100, MIP: 111, AID: 200, Auth: T, Pri: standard, B: 5, C: 3, R: 11.1 Time: 3
+2: ID: 111, MIP: 101, AID: 201, Auth: F, Pri: NSA, B: 2.4, C: 3, R: 54.4 Time: 4
+Removed 2 from channel 3
+List empty
+# 
+# TEST 9: Quit
+# 
+# to verify test 9, run with valgrind and confirm there are no memory leaks
+# 
+Goodbye

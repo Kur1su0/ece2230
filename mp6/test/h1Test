@@ -1,0 +1,55 @@
+echo "expected 1 -- 2 -- 3 -- 5 with cost of 11"
+expected 1 -- 2 -- 3 -- 5 with cost of 11
+./lab6 -g 1 -h 1 -s1 -d 5 -v
+your input:
+ int graph_type=1
+ int num_vertices=-1
+ int num_adj_vertices=-1
+ int graph_operation=1
+ int num_source_vertices=1
+ int num_dest_vertices=5
+ seed=0
+ verbose=1
+         0        1        2        3        4        5        6        
+0        0        INF      INF      INF      INF      INF      INF      
+1        INF      0        INF      INF      INF      INF      INF      
+2        INF      INF      0        INF      INF      INF      INF      
+3        INF      INF      INF      0        INF      INF      INF      
+4        INF      INF      INF      INF      0        INF      INF      
+5        INF      INF      INF      INF      INF      0        INF      
+6        INF      INF      INF      INF      INF      INF      0        
+
+after add
+         0        1        2        3        4        5        6        
+0        0        INF      INF      INF      INF      INF      INF      
+1        INF      0        3.000000 INF      INF      INF      5.000000 
+2        INF      INF      0        7.000000 3.000000 INF      10.000000
+3        INF      INF      INF      0        5.000000 1.000000 INF      
+4        INF      INF      INF      INF      0        6.000000 INF      
+5        INF      INF      INF      INF      INF      0        7.000000 
+6        4.000000 INF      INF      8.000000 9.000000 INF      0        
+
+Starting at node 1
+ 2 added with cost 3
+	3 has lower cost 10 with predecessor 2
+	4 has lower cost 6 with predecessor 2
+ 6 added with cost 5
+	0 has lower cost 9 with predecessor 6
+ 4 added with cost 6
+	5 has lower cost 12 with predecessor 4
+ 0 added with cost 9
+ 3 added with cost 10
+	5 has lower cost 11 with predecessor 3
+ 5 added with cost 11
+Found 7 nodes, including source
+table for source:1
+vertex   dist     prede    
+1        0.000000  s        
+2        3.000000  1        
+6        5.000000  1        
+4        6.000000  2        
+0        9.000000  6        
+3        10.000000 2        
+5        11.000000 3        
+coost 11.000000 : 1 -- 2 -- 3 -- 5
+time = 0.006

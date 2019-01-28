@@ -1,0 +1,25 @@
+echo "50000 driver test"
+echo " "
+# non cao
+# first
+./lab4 -e -w -t 50000 -t 50000 -f first
+echo "-------------------"
+echo "-------------------"
+echo "-------------------"
+echo " "
+# best
+./lab4 -e -w -t 50000 -t 50000 -f best
+echo "-------------------"
+echo "-------------------"
+echo "-------------------"
+echo " "
+# cao
+# first
+./lab4 -e -w -t 50000 -t 50000 -c -f first
+echo "-------------------"
+echo "-------------------"
+echo "-------------------"
+echo " "
+#best
+./lab4 -e -w -t 50000 -t 50000 -c -f best
+

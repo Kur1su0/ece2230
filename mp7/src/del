@@ -1,0 +1,110 @@
+Non-option argument linear
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 1543343734
+----------DeleteDriver 1------------
+Insert Key:5
+Insert Key:12
+Insert Key:11
+Table info:
+
+i   Key 
+--------
+0   empt
+1   empt
+2   empt
+3   11  
+4   12  
+5   5   
+6   empt
+Insert Key:19
+Del Key:5
+Del Key:8
+Table info:
+
+i   Key 
+--------
+0   empt
+1   empt
+2   19  
+3   11  
+4   12  
+5   del 
+6   empt
+Del Key:12
+Insert Key:19
+Insert Key:26
+Table info:
+
+i   Key 
+--------
+0   empt
+1   empt
+2   19  
+3   11  
+4   del 
+5   26  
+6   empt
+--------End of Driver 1--------
+
+--------Del Driver 2--------
+Insert Key:7
+Insert Key:8
+Insert Key:9
+Table info:
+
+i   Key 
+--------
+0   7   
+1   8   
+2   9   
+3   empt
+4   empt
+5   empt
+6   empt
+Insert Key:10
+Insert Key:11
+Insert Key:12
+Table info:
+
+i   Key 
+--------
+0   7   
+1   8   
+2   9   
+3   10  
+4   11  
+5   12  
+6   empt
+Del Key:7
+Del Key:8
+Del Key:9
+Table info:
+
+i   Key 
+--------
+0   del 
+1   del 
+2   del 
+3   10  
+4   11  
+5   12  
+6   empt
+Del Key:10
+Del Key:11
+Insert Key:13
+Insert Key:14
+Table info:
+
+i   Key 
+--------
+0   14  
+1   del 
+2   del 
+3   del 
+4   del 
+5   12  
+6   13  
+retriving key 16
+key:16 not found
+-------- End of Driver2--------

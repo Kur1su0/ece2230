@@ -1,0 +1,25 @@
+echo "standard e test"
+echo " "
+# non cao
+# first
+./lab4 -e -f first
+echo "-------------------"
+echo "-------------------"
+echo "-------------------"
+echo " "
+# best
+./lab4 -e -f best
+echo "-------------------"
+echo "-------------------"
+echo "-------------------"
+echo " "
+# cao
+# first
+./lab4 -e -f -c first
+echo "-------------------"
+echo "-------------------"
+echo "-------------------"
+echo " "
+#best
+./lab4 -e -f -cbest
+

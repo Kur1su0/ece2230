@@ -1,0 +1,17 @@
+echo "optimal 10"
+./lab5 -o -w 10 -t 1000000
+
+echo "random 10"
+./lab5 -r -w 10 -t 1000000
+
+echo "poor 10"
+./lab5 -p -w 10 -t 1000000
+
+echo "optimal 20"
+./lab5 -o -w 20 -t 1000000
+
+echo "random 20"
+./lab5 -r -w 20 -t 1000000
+
+echo "poor 20"
+./lab5 -p -w 20 -t 1000000

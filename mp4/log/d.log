@@ -1,0 +1,16 @@
+Seed: 1765640879
+First-fit search policy without coalescing
+
+Equilibrium test driver using system malloc and free
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+arena=675840B, chunks=1, alloc=552480, free=123360
+After exercise, time=135.653
+arena=675840B, chunks=113, alloc=219920, free=455920
+After cleanup
+arena=675840B, chunks=250, alloc=0, free=675840
+----- End of equilibrium test -----
+

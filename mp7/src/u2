@@ -1,0 +1,40 @@
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 1543343734
+
+-------- Unit Driver 2 --------
+Bondary check 2
+prob testInserting 14 ...updated
+Table info:
+
+i   Key 
+--------
+0   empt
+1   empt
+2   empt
+3   14  
+4   empt
+5   empt
+6   empt
+7   empt
+8   empt
+9   empt
+10  empt
+Inserting 24 ...updated
+Table info:
+
+i   Key 
+--------
+0   empt
+1   empt
+2   24  
+3   14  
+4   empt
+5   empt
+6   empt
+7   empt
+8   empt
+9   empt
+10  empt
+
+-------- End of Unit Driver 2 --------

@@ -1,0 +1,199 @@
+Performance Evaluation
+Table size (65537), load factor (0.9)
+Open addressing with quadratic probe sequence
+Seed: 1543343734
+
+----- Equilibrium test driver -----
+  Trials: 50000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 2.88107
+  Keys added (25143), removed (24856) new size should be (59270) and is (59270)
+  After exercise, time=20.587 
+  successful searches during exercise=4.48381, trials=24857
+  unsuccessful searches during exercise=93.8881, trials=25143
+  After retrieve experiment, time=90.702
+  New load factor = 0.904375
+  Percent empty locations marked deleted = 96.9363
+   Measured avg probes for successful search=5.91475, trials=59270
+   Measured avg probes for unsuccessful search=338.646, trials=49996
+    Do deletions increase avg number of probes?
+--- Quadratic probe sequence performance formulas ---
+    Expected probes for successful search 2.89513
+    Expected probes for unsuccessful search 11.9004
+  Rehash table
+  After rehash, time=8.478
+   Measured avg probes for successful search=2.96109, trials=59270
+   Measured avg probes for unsuccessful search=12.837, trials=49997
+----- End of equilibrium test -----
+
+Table size (65537), load factor (0.9)
+Open addressing with quadratic probe sequence
+Seed: 1543343734
+
+----- Equilibrium test driver -----
+  Trials: 100000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 2.88107
+  Keys added (50240), removed (49755) new size should be (59468) and is (59468)
+  After exercise, time=577.543 
+  successful searches during exercise=5.72898, trials=49760
+  unsuccessful searches during exercise=1519.41, trials=50240
+  After retrieve experiment, time=4543.75
+  New load factor = 0.907396
+  Percent empty locations marked deleted = 99.8847
+   Measured avg probes for successful search=7.83467, trials=59468
+   Measured avg probes for unsuccessful search=8432.67, trials=99995
+    Do deletions increase avg number of probes?
+--- Quadratic probe sequence performance formulas ---
+    Expected probes for successful search 2.92572
+    Expected probes for unsuccessful search 12.2707
+  Rehash table
+  After rehash, time=14.401
+   Measured avg probes for successful search=2.94789, trials=59468
+   Measured avg probes for unsuccessful search=12.9515, trials=99995
+----- End of equilibrium test -----
+
+Table size (65537), load factor (0.9)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Equilibrium test driver -----
+  Trials: 50000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 2.55584
+  Keys added (25120), removed (24878) new size should be (59225) and is (59225)
+  After exercise, time=27.281 
+  successful searches during exercise=3.98436, trials=24880
+  unsuccessful searches during exercise=117.916, trials=25120
+  After retrieve experiment, time=131.516
+  New load factor = 0.903688
+  Percent empty locations marked deleted = 97.7662
+   Measured avg probes for successful search=5.25008, trials=59225
+   Measured avg probes for unsuccessful search=464.432, trials=49995
+    Do deletions increase avg number of probes?
+--- Double hashing performance formulas ---
+    Expected probes for successful search 2.58957
+    Expected probes for unsuccessful search 10.3829
+  Rehash table
+  After rehash, time=10.662
+   Measured avg probes for successful search=2.61846, trials=59225
+   Measured avg probes for unsuccessful search=10.3763, trials=49996
+----- End of equilibrium test -----
+
+Table size (65537), load factor (0.9)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Equilibrium test driver -----
+  Trials: 100000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 2.55584
+  Keys added (50049), removed (49947) new size should be (59085) and is (59085)
+  After exercise, time=710.515 
+  successful searches during exercise=5.09169, trials=49951
+  unsuccessful searches during exercise=1850.88, trials=50049
+  After retrieve experiment, time=6901.25
+  New load factor = 0.901552
+  Percent empty locations marked deleted = 99.938
+   Measured avg probes for successful search=7.01112, trials=59085
+   Measured avg probes for unsuccessful search=13098.6, trials=99995
+    Do deletions increase avg number of probes?
+--- Double hashing performance formulas ---
+    Expected probes for successful search 2.57137
+    Expected probes for unsuccessful search 10.1576
+  Rehash table
+  After rehash, time=14.715
+   Measured avg probes for successful search=2.58722, trials=59085
+   Measured avg probes for unsuccessful search=10.1706, trials=99995
+----- End of equilibrium test -----
+
+Table size (65537), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 1543343734
+
+----- Equilibrium test driver -----
+  Trials: 50000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 5.52346
+  Keys added (25102), removed (24897) new size should be (59188) and is (59188)
+  After exercise, time=25.82 
+  successful searches during exercise=9.72693, trials=24898
+  unsuccessful searches during exercise=190.43, trials=25102
+  After retrieve experiment, time=68.546
+  New load factor = 0.903123
+  Percent empty locations marked deleted = 88.1871
+   Measured avg probes for successful search=13.1325, trials=59188
+   Measured avg probes for unsuccessful search=353.784, trials=49995
+    Do deletions increase avg number of probes?
+--- Linear probe sequence performance formulas ---
+    Expected probes for successful search 5.66121
+    Expected probes for unsuccessful search 53.7761
+  Rehash table
+  After rehash, time=16.387
+   Measured avg probes for successful search=5.99253, trials=59188
+   Measured avg probes for unsuccessful search=62.347, trials=49996
+----- End of equilibrium test -----
+
+Table size (65537), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 1543343734
+
+----- Equilibrium test driver -----
+  Trials: 100000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 5.52346
+  Keys added (50176), removed (49821) new size should be (59338) and is (59338)
+  After exercise, time=118.96 
+  successful searches during exercise=12.4391, trials=49824
+  unsuccessful searches during exercise=472.126, trials=50176
+  After retrieve experiment, time=510.822
+  New load factor = 0.905412
+  Percent empty locations marked deleted = 98.2094
+   Measured avg probes for successful search=17.6413, trials=59338
+   Measured avg probes for unsuccessful search=1528.7, trials=99994
+    Do deletions increase avg number of probes?
+--- Linear probe sequence performance formulas ---
+    Expected probes for successful search 5.78609
+    Expected probes for unsuccessful search 56.3856
+  Rehash table
+  After rehash, time=25.883
+   Measured avg probes for successful search=5.63199, trials=59338
+   Measured avg probes for unsuccessful search=54.3317, trials=99991
+----- End of equilibrium test -----
+

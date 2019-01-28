@@ -1,0 +1,72 @@
+optimal 10
+Seed: 10212018
+
+----- Access driver -----
+  Access trials: 1000000
+  Levels for tree: 10
+  Build optimal tree with size=1023
+  After access exercise, time=120.427, tree size=1023
+    Expect successful search=17.0196, measured=17.0199, trials=499752
+    Expect unsuccessful search=20, measured=20, trials=500248
+----- End of access driver -----
+
+random 10
+Seed: 10212018
+
+----- Access driver -----
+  Access trials: 1000000
+  Levels for tree: 10
+  Build random tree with size=1023
+  After access exercise, time=103.758, tree size=1023
+    Expect successful search=24.7654, measured=24.7777, trials=499742
+    Expect unsuccessful search=27.7383, measured=27.7201, trials=500258
+----- End of access driver -----
+
+poor 10
+Seed: 10212018
+
+----- Access driver -----
+  Access trials: 1000000
+  Levels for tree: 10
+  Build poor tree with size=1023
+  After access exercise, time=138.418, tree size=1023
+    Expect successful search=39.9795, measured=39.9851, trials=499746
+    Expect unsuccessful search=42.9375, measured=42.9419, trials=500254
+----- End of access driver -----
+
+optimal 20
+Seed: 10212018
+
+----- Access driver -----
+  Access trials: 1000000
+  Levels for tree: 20
+  Build optimal tree with size=1048575
+  After access exercise, time=649.798, tree size=1048575
+    Expect successful search=37, measured=37.0001, trials=499457
+    Expect unsuccessful search=40, measured=40, trials=500543
+----- End of access driver -----
+
+random 20
+Seed: 10212018
+
+----- Access driver -----
+  Access trials: 1000000
+  Levels for tree: 20
+  Build random tree with size=1048575
+  After access exercise, time=848.942, tree size=1048575
+    Expect successful search=51.7207, measured=51.7116, trials=500417
+    Expect unsuccessful search=54.7207, measured=54.7077, trials=499583
+----- End of access driver -----
+
+poor 20
+Seed: 10212018
+
+----- Access driver -----
+  Access trials: 1000000
+  Levels for tree: 20
+  Build poor tree with size=1048575
+  After access exercise, time=3600.32, tree size=1048575
+    Expect successful search=1042, measured=1042.5, trials=499472
+    Expect unsuccessful search=1045, measured=1044.54, trials=500528
+----- End of access driver -----
+

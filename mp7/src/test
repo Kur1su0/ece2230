@@ -1,0 +1,42 @@
+Table size (65537), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 1543343734
+
+----- Retrieve driver -----
+  Trials: 50000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 5.52346
+    Avg probes for successful search = 1 measured with 1 trials
+    Avg probes for unsuccessful search = 51.5869 measured with 49999 trials
+--- Linear probe sequence performance formulas ---
+    Expected probes for successful search 5.5
+    Expected probes for unsuccessful search 50.5
+----- End of access driver -----
+
+Table size (65537), load factor (0.9)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Retrieve driver -----
+  Trials: 50000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 2.55584
+    Avg probes for successful search = 1 measured with 1 trials
+    Avg probes for unsuccessful search = 10.0263 measured with 49999 trials
+--- Double hashing performance formulas ---
+    Expected probes for successful search 2.55843
+    Expected probes for unsuccessful search 10
+----- End of access driver -----
+

@@ -1,0 +1,106 @@
+standard e test
+ 
+Seed: 1765640879
+First-fit search policy without coalescing
+
+Equilibrium test driver using Mem_alloc and Mem_free from mem.c
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+the student must implement mem stats
+#items in linked-list:120, min:240, max:3088, avrage:128, #Pages:133, #bytes: 16800, #SbrkCalls:133
+
+After exercise, time=2611.41
+the student must implement mem stats
+#items in linked-list:49856, min:32, max:976, avrage:256, #Pages:3220, #bytes: 12979648, #SbrkCalls:3220
+
+After cleanup
+the student must implement mem stats
+all memory is in the heap -- no leaks are possible
+#items in linked-list:50244, min:32, max:1040, avrage:256, #Pages:3220, #bytes: 13189120, #SbrkCalls:3220
+
+----- End of equilibrium test -----
+
+-------------------
+-------------------
+-------------------
+ 
+Seed: 1765640879
+Best-fit search policy without coalescing
+
+Equilibrium test driver using Mem_alloc and Mem_free from mem.c
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+the student must implement mem stats
+#items in linked-list:53, min:16, max:2048, avrage:80, #Pages:130, #bytes: 4512, #SbrkCalls:130
+
+After exercise, time=340.659
+the student must implement mem stats
+#items in linked-list:2001, min:320, max:3056, avrage:272, #Pages:189, #bytes: 564672, #SbrkCalls:189
+
+After cleanup
+the student must implement mem stats
+all memory is in the heap -- no leaks are possible
+#items in linked-list:2389, min:320, max:3056, avrage:320, #Pages:189, #bytes: 774144, #SbrkCalls:189
+
+----- End of equilibrium test -----
+
+-------------------
+-------------------
+-------------------
+ 
+Seed: 1765640879
+First-fit search policy using coalescing
+
+Equilibrium test driver using Mem_alloc and Mem_free from mem.c
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+the student must implement mem stats
+#items in linked-list:120, min:240, max:3088, avrage:128, #Pages:133, #bytes: 16800, #SbrkCalls:133
+
+After exercise, time=175.78
+the student must implement mem stats
+#items in linked-list:209, min:64, max:65168, avrage:2416, #Pages:174, #bytes: 503232, #SbrkCalls:174
+
+After cleanup
+the student must implement mem stats
+all memory is in the heap -- no leaks are possible
+#items in linked-list:2, min:712704, max:712704, avrage:712704, #Pages:174, #bytes: 712704, #SbrkCalls:174
+
+----- End of equilibrium test -----
+
+-------------------
+-------------------
+-------------------
+ 
+Seed: 1765640879
+Best-fit search policy using coalescing
+
+Equilibrium test driver using Mem_alloc and Mem_free from mem.c
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+the student must implement mem stats
+#items in linked-list:53, min:16, max:2048, avrage:80, #Pages:130, #bytes: 4512, #SbrkCalls:130
+
+After exercise, time=181.902
+the student must implement mem stats
+#items in linked-list:104, min:64, max:158128, avrage:4000, #Pages:152, #bytes: 413120, #SbrkCalls:152
+
+After cleanup
+the student must implement mem stats
+all memory is in the heap -- no leaks are possible
+#items in linked-list:2, min:622592, max:622592, avrage:622592, #Pages:152, #bytes: 622592, #SbrkCalls:152
+
+----- End of equilibrium test -----
+

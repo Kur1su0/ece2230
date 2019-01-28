@@ -1,0 +1,96 @@
+Performance Evaluation
+Table size (65537), load factor (0.5)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Retrieve driver -----
+  Trials: 50000
+  Build table with 32768 random keys
+    The average number of probes for a successful search = 1.38678
+    Avg probes for successful search = 1 measured with 4 trials
+    Avg probes for unsuccessful search = 1.9931 measured with 49996 trials
+--- Double hashing performance formulas ---
+    Expected probes for successful search 1.38629
+    Expected probes for unsuccessful search 2
+----- End of access driver -----
+
+Table size (65537), load factor (0.75)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Retrieve driver -----
+  Trials: 50000
+  Build table with 49152 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 1.84031
+    Avg probes for successful search = 1 measured with 3 trials
+    Avg probes for unsuccessful search = 4.0152 measured with 49997 trials
+--- Double hashing performance formulas ---
+    Expected probes for successful search 1.84839
+    Expected probes for unsuccessful search 4
+----- End of access driver -----
+
+Table size (65537), load factor (0.9)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Retrieve driver -----
+  Trials: 50000
+  Build table with 58983 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 2.55584
+    Avg probes for successful search = 1 measured with 1 trials
+    Avg probes for unsuccessful search = 10.0263 measured with 49999 trials
+--- Double hashing performance formulas ---
+    Expected probes for successful search 2.55843
+    Expected probes for unsuccessful search 10
+----- End of access driver -----
+
+Table size (65537), load factor (0.95)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Retrieve driver -----
+  Trials: 50000
+  Build table with 62260 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 3.1496
+    Avg probes for successful search = 1 measured with 1 trials
+    Avg probes for unsuccessful search = 20.0407 measured with 49999 trials
+--- Double hashing performance formulas ---
+    Expected probes for successful search 3.1534
+    Expected probes for unsuccessful search 20
+----- End of access driver -----
+
+Table size (65537), load factor (0.99)
+Open addressing with double hashing
+Seed: 1543343734
+
+----- Retrieve driver -----
+  Trials: 50000
+  Build table with 64881 random keys
+during random build generated duplicate key (981012413) on trial (34276)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (129593823) on trial (55824)
+this should be unlikely: if see more than a few you have a problem
+during random build generated duplicate key (272743182) on trial (58553)
+this should be unlikely: if see more than a few you have a problem
+    The average number of probes for a successful search = 4.66812
+    Avg probes for successful search = 1 measured with 1 trials
+    Avg probes for unsuccessful search = 99.3912 measured with 49999 trials
+--- Double hashing performance formulas ---
+    Expected probes for successful search 4.65169
+    Expected probes for unsuccessful search 100
+----- End of access driver -----
+
